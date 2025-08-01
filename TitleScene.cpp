@@ -1,5 +1,6 @@
 #include "TitleScene.h"
 #include <Novice.h>
+#include <Windows.h>
 
 void TitleScene::Initialize() {}
 
@@ -13,6 +14,8 @@ void TitleScene::Update(char* keys, char* preKeys) {
 
 void TitleScene::Draw() {
 
-	Novice::ScreenPrintf(0, 0, "Curernt Scene : Title");
-	Novice::ScreenPrintf(0, 30, "Push Space : Next Scene");
+	SetConsoleOutputCP(65001);
+
+	Novice::ScreenPrintf(580, 345, "Title");
+	Novice::ScreenPrintf(500, 375, "Push Space : Stage Scene");
 }

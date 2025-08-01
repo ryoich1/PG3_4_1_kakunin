@@ -33,7 +33,7 @@ int GameManager::Run() {
 		Novice::GetHitKeyStateAll(keys);
 
 		// 前のシーンに現在のシーンを代入
-		/*前のシーンNo*/ = /*現在のシーンNo*/;
+		prevSceneNo_ = currentSceneNo_;
 
 		// 現在のシーンの番号を受け取る
 		currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneNo();

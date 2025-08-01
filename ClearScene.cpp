@@ -1,5 +1,6 @@
 #include "ClearScene.h"
 #include <Novice.h>
+#include <Windows.h>
 
 void ClearScene::Initialize() {}
 
@@ -12,6 +13,9 @@ void ClearScene::Update(char* keys, char* preKeys) {
 }
 
 void ClearScene::Draw() {
-	Novice::ScreenPrintf(0, 0, "Curernt Scene : Clear");
-	Novice::ScreenPrintf(0, 30, "Push Space : Next Scene");
+
+	SetConsoleOutputCP(65001);
+
+	Novice::ScreenPrintf(580, 345, "Clear!!!");
+	Novice::ScreenPrintf(500, 375, "Push Space : Title Scene");
 }
